@@ -21,7 +21,7 @@
 
 ;;; Commentary:
 
-;; 
+;;
 
 ;;; Code:
 
@@ -424,8 +424,7 @@
 
 (defun ac-ropemacs-setup ()
   (ac-ropemacs-require)
-  ;(setq ac-sources (append (list 'ac-source-ropemacs) ac-sources))
-  (setq ac-omni-completion-sources '(("\\." ac-source-ropemacs))))
+  (setq ac-sources (list 'ac-source-ropemacs)))
 
 (defun ac-ropemacs-initialize ()
   (autoload 'pymacs-apply "pymacs")
